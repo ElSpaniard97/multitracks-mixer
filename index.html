@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎚️ YouTube Multitrack Mixer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🎧 YouTube Audio Analyzer</h1>
+      <div class="controls">
+        <input
+          type="text"
+          id="youtubeURL"
+          placeholder="Paste YouTube URL here..."
+        />
+        <button id="loadBtn">🎵 Load Stems</button>
+        <button id="playBtn">▶️ Play</button>
+        <button id="stopBtn">⏹️ Stop</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="status"></div>
+      <div id="waveforms"></div>
+      <div id="mixers"></div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/wavesurfer.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
