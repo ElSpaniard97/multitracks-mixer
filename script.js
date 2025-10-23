@@ -1,5 +1,6 @@
 // Replace with your Render backend URL
-const API_URL = "https://youtube-audio-analyzer.onrender.com";
+const API_URL = "const API_URL = "https://youtube-audio-analyzer.onrender.com/api/extract";
+";
 
 let wavesurferInstances = {};
 let isPlaying = false;
