@@ -1,6 +1,5 @@
 // Replace with your Render backend URL
-const API_URL = "const API_URL = "https://youtube-audio-analyzer.onrender.com/api/extract";
-";
+const API_URL = "https://youtube-audio-analyzer.onrender.com/api/extract";
 
 let wavesurferInstances = {};
 let isPlaying = false;
@@ -97,7 +96,8 @@ function createTrack(name, audioURL) {
   const slider = mixer.querySelector(".fader");
   slider.addEventListener("input", (e) => {
     const volume = parseFloat(e.target.value);
-    if (ws && ws.backend) ws.setVolume(volume);
+    // FIX: removed outdated ws.backend check; setVolume works directly
+    ws.setVolume(volume);
   });
 }
 
