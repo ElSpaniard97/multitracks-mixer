@@ -66,16 +66,11 @@ button:hover {
   margin: 0.5rem;
 }
 
-#mixers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 1rem;
-}
-
 .fader {
-  writing-mode: bt-lr;
-  appearance: slider-vertical;
+  /* FIX: corrected vertical slider CSS for cross-browser support */
+  writing-mode: vertical-lr;
+  direction: rtl;
+  -webkit-appearance: slider-vertical;
   height: 100px;
   margin-top: 0.5rem;
 }
